@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Expense Tracker</h1>
+    
+    <!-- Add Expense Form -->
+    <div class="form-container">
+      <input type="number" id="amount" placeholder="Amount" required>
+      <input type="text" id="category" placeholder="Category" required>
+      <input type="date" id="date" required>
+      <button id="add-expense">Add Expense</button>
+    </div>
+    
+    <!-- Expense List -->
+    <h2>Expenses</h2>
+    <ul id="expense-list"></ul>
+    
+    <!-- Pie Chart -->
+    <h2>Expense Breakdown</h2>
+    <canvas id="expense-chart" width="400" height="400"></canvas>
+  </div>
+</body>
+</html>
